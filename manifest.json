@@ -1,0 +1,23 @@
+{
+  "short_name": "Escale",
+  "name": "Escale Concursos | Aqui se constrói uma aprovação.",
+  "icons": [
+    {
+      "src": "/escale.jpg",
+      "type": "image/jpeg",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/escale.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#040d07",
+  "theme_color": "#040d07",
+  "display": "standalone",
+  "orientation": "any"
+}
