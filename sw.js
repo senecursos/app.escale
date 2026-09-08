@@ -1,16 +1,15 @@
-const CACHE_NAME = 'escale-concursos-cache-v2';
+const CACHE_NAME = 'escale-concursos-cache-v3';
 
 const urlsToCache = [
   '/',
   '/index.html',
-  '/manifest.json',
+  '/manifest.json?v=3',
   '/escale.jpg',
   '/imagem1.jpg'
 ];
 
-// Instalação do Service Worker e atualização do cache
 self.addEventListener('install', event => {
-  self.skipWaiting(); // Força a ativação do novo Service Worker imediatamente
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
@@ -19,7 +18,6 @@ self.addEventListener('install', event => {
   );
 });
 
-// Interceptação de requisições
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request)
@@ -32,7 +30,6 @@ self.addEventListener('fetch', event => {
   );
 });
 
-// Limpeza e destruição imediata de caches antigos (v1)
 self.addEventListener('activate', event => {
   const cacheWhitelist = [CACHE_NAME];
   event.waitUntil(
@@ -40,7 +37,7 @@ self.addEventListener('activate', event => {
       return Promise.all(
         cacheNames.map(cacheName => {
           if (cacheWhitelist.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName); // Apaga o cache v1 onde o manifest antigo estava preso
+            return caches.delete(cacheName);
           }
         })
       );
