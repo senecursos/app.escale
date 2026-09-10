@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escale Concursos | Aqui se constrói uma aprovação.</title>
 
-    <meta property="og:description" content="Aplicativo Escale Concursos. Clique e siga as instruções.">
+    <meta property="og:description" content="Aplicativo Escale Concursos. Acesse com facilidade: EDITAIS; SIMULADOS INTERATIVOS GRÁTIS (100% comentados em PDF); ESTUDO POR DISCIPLINA e CURSOS ONLINE ou PRESENCIAIS. PREPARE-SE!!! Clique e siga as instruções.">
 
     <link rel="icon" type="image/png" href="escale.jpg">
     <meta property="og:image" content="https://escaleconcursos.senebr.com.br/escale.jpg">
@@ -43,7 +43,7 @@
             background-color: #0a160e; 
             border: 1px solid #16291b;
             border-radius: 24px;
-            padding-bottom: 32px;
+            padding-bottom: 24px;
             text-align: center;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
             overflow: hidden; 
@@ -106,11 +106,11 @@
             border: 1px solid #6b7a48;
         }
 
-        /* GRADE PARA OS BOTÕES VERTICAIS (APROXIMADOS) */
+        /* GRADE PARA OS BOTÕES VERTICAIS */
         .servicos-grid {
             display: flex;
             flex-direction: column;
-            gap: 6px; /* Espaçamento reduzido */
+            gap: 6px;
         }
 
         /* ESTILO BASE DOS BOTÕES */
@@ -125,6 +125,8 @@
             font-size: 14px; 
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
             transition: transform 0.1s, opacity 0.2s;
+            cursor: pointer;
+            border: none;
         }
 
         .btn-link-servico:active {
@@ -168,9 +170,17 @@
             border: 1px solid #232d18;
         }
 
+        /* 6. Botão Marrom Escuro de Destaque com Texto Amarelo */
+        .btn-estilo-marrom-destaque {
+            background-color: #2d1b0e;
+            color: #f59e0b;
+            border: 1px solid #4a2e18;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        }
+
         /* SEÇÃO SEPARADA REDES SOCIAIS (BRANCO GELO) */
         .card-redes {
-            background-color: #f3f4f6; /* Branco Gelo */
+            background-color: #f3f4f6;
             border-radius: 16px;
             padding: 20px;
             margin-bottom: 20px;
@@ -179,20 +189,20 @@
             border: 1px solid #e5e7eb;
         }
 
-        /* TÍTULO PRINCIPAL DAS REDES SOCIAIS (AUMENTADO) */
+        /* TÍTULO PRINCIPAL DAS REDES SOCIAIS */
         .sub-redes-titulo-geral {
-            font-size: 16px; /* Aumentado de 13px para 16px */
+            font-size: 16px;
             font-weight: 800;
-            color: #111827; /* Texto Preto */
+            color: #111827;
             text-transform: uppercase;
             letter-spacing: 0.8px;
             text-align: center;
             margin-bottom: 14px;
         }
 
-        /* LINHA DIVISÓRIA PRATEADA ELEGANTE (MAIS VISÍVEL) */
+        /* LINHA DIVISÓRIA PRATEADA ELEGANTE */
         .divisoria-prata {
-            height: 2px; /* Aumentado de 1px para 2px para maior destaque */
+            height: 2px;
             background: linear-gradient(90deg, rgba(209,213,219,0) 0%, rgba(107,114,128,0.9) 50%, rgba(209,213,219,0) 100%);
             border: none;
             margin: 0 auto 18px auto;
@@ -206,21 +216,21 @@
             margin-bottom: 14px;
         }
 
-        /* MINIATURA AUMENTADA */
+        /* MINIATURA */
         .miniatura-rede {
-            width: 44px; /* Aumentado de 32px para 44px */
-            height: 44px; /* Aumentado de 32px para 44px */
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid #9ca3af;
             background-color: #e5e7eb;
         }
 
-        /* TEXTO "EM BREVE" AUMENTADO */
+        /* TEXTO "EM BREVE" */
         .sub-redes-titulo {
-            font-size: 15px; /* Aumentado de 13px para 15px */
+            font-size: 15px;
             font-weight: 800;
-            color: #374151; /* Tom um pouco mais escuro para maior destaque */
+            color: #374151;
             text-transform: uppercase;
             letter-spacing: 0.6px;
         }
@@ -232,8 +242,8 @@
         }
 
         .btn-rede {
-            background-color: #040d07; /* Preto */
-            color: #f59e0b; /* Texto Amarelo Centralizado */
+            background-color: #040d07;
+            color: #f59e0b;
             text-align: center;
             padding: 10px 2px;
             border-radius: 8px;
@@ -251,6 +261,20 @@
         .btn-rede:hover {
             background-color: #0a160e;
             color: #fbbf24;
+        }
+
+        /* BOTÃO DE COMPARTILHAMENTO NATIVO */
+        .btn-compartilhar {
+            margin-bottom: 24px;
+        }
+
+        /* RODAPÉ / ASSINATURA */
+        .footer-assinatura {
+            font-size: 12px;
+            color: #6b7280;
+            text-align: center;
+            margin-top: 8px;
+            letter-spacing: 0.5px;
         }
 
         /* ESTILOS DO MODAL / POP-UP FLUTUANTE */
@@ -408,11 +432,11 @@
             <div class="card-secao">
                 <div class="servicos-grid">
                     <a href="https://escaleconcursos.com.br" class="btn-link-servico btn-estilo-cinza-claro">Ir para o site</a>
-                    <a href="https://escaleconcursos.com.br" class="btn-link-servico btn-estilo-amarelo">Editais estratégicos dos principais concursos abertos no Brasil</a>
+                    <a href="https://escaleconcursos.com.br" class="btn-link-servico btn-estilo-amarelo">EDITAIS estratégicos dos principais CONCURSOS ABERTOS no Brasil</a>
                     <a href="https://escaleconcursos.com.br" class="btn-link-servico btn-estilo-verde-medio">Concursos autorizados</a>
-                    <a href="https://escaleconcursos.com.br/disciplinas.html" class="btn-link-servico btn-estilo-verde-escuro">Estude por disciplinas</a>
-                    <a href="https://escaleconcursos.com.br/simulados.html" class="btn-link-servico btn-estilo-preto-dourado">Responda simulados interativos grátis</a>
-                    <a href="https://portugues.senebr.com.br" class="btn-link-servico btn-estilo-cinza-claro">Conheça o português estratégico</a>
+                    <a href="https://escaleconcursos.com.br/disciplinas.html" class="btn-link-servico btn-estilo-verde-escuro">ESTUDE POR DISCIPLINAS</a>
+                    <a href="https://escaleconcursos.com.br/simulados.html" class="btn-link-servico btn-estilo-preto-dourado">Responda SIMULADOS interativos GRÁTIS</a>
+                    <a href="https://portugues.senebr.com.br" class="btn-link-servico btn-estilo-cinza-claro">Conheça o PORTUGUÊS ESTRATÉGICO</a>
                     <a href="https://youtu.be/YIFKSR-46wo?is=ZzMbMrdrYRGzxSFB" class="btn-link-servico btn-estilo-amarelo">Conheça a SENE</a>
                 </div>
             </div>
@@ -435,13 +459,38 @@
                     <a href="#" class="btn-rede" target="_blank">Instagram</a>
                 </div>
             </div>
+
+            <!-- BOTÃO SOLTO DE COMPARTILHAMENTO NATIVO (MARROM ESCURO COM TEXTO AMARELO) -->
+            <button onclick="compartilharApp()" class="btn-link-servico btn-estilo-marrom-destaque btn-compartilhar">
+                📲 Compartilhe o aplicativo
+            </button>
+
+            <!-- RODAPÉ DE ASSINATURA -->
+            <div class="footer-assinatura">
+                © 2026 SENE. Todos os direitos reservados.
+            </div>
         </div>
     </div>
 
-    <!-- SCRIPT DE VERIFICAÇÃO, CONTROLE DO MODAL E REGISTRO DO SERVICE WORKER -->
+    <!-- SCRIPT DE VERIFICAÇÃO, CONTROLE DO MODAL, COMPARTILHAMENTO NATIVO E SERVICE WORKER -->
     <script>
         function fecharModal() {
             document.getElementById('modalInstalacao').style.display = 'none';
+        }
+
+        // Função para acionar o compartilhamento nativo do sistema
+        function compartilharApp() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Escale Concursos',
+                    text: 'Escale Concursos | Aqui se constrói uma aprovação.',
+                    url: window.location.href
+                }).catch(err => console.log('Compartilhamento cancelado ou não suportado:', err));
+            } else {
+                // Fallback para navegadores sem suporte ao Share API nativo
+                navigator.clipboard.writeText(window.location.href);
+                alert('Link do aplicativo copiado para a área de transferência!');
+            }
         }
 
         window.addEventListener('DOMContentLoaded', () => {
